@@ -40,6 +40,7 @@ void procesa(string& s, cof& scof, int& ult_s){
     }else if(ult_c == '-'){
         ult_s = -1;
     }else if(ult_c  == '='){
+        ult_s = 1;
         scof.signo = -1;
     }else if(ult_c == 'x'){
         scof.lin += ult_s * scof.signo * ((tam > 1)?stof(s.substr(0, tam - 1)):1);
